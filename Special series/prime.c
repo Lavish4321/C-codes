@@ -3,14 +3,14 @@
 main()
 
 {
-    int i=1 , n , prime=0;
+    int i=2 , n , prime=0;
 
     printf("\n Enter number = ");
-    scanf("%d" , &n); // 5 // 6
+    scanf("%d" , &n); 
 
-    while(i<n/2) // 2<2.5
+    while(i<=n/2) 
     {
-      if(n%i==0) // 6%2
+      if(n%i==0) 
       {
         prime=1;
         break;
@@ -18,9 +18,13 @@ main()
       i++;
    }
 
-   if(prime==0)
+   if(n==1)
    {
-     printf("\n Its a prime number ");
+     printf("\n Its not a prime number ");
+   }
+   else if(prime==0)
+   {
+   	printf("\n Its a prime number");
    }
    else
    {
